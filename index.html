@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Inloggning</title>
+</head>
+<body>
 
+    <!-- Knappar som styr inloggning -->
+    <div style="width: 100px; float: right;">
+        <button id="firstBtn" style="display: none" onclick="document.getElementById('loginForm').style.display='block'">Logga in</button>
+        <button id="secondBtn" style="display: none" class="cancelbtn" onclick="logOut()">Logga ut</button>  
+    </div>
+        <span class="userinfo" id="info"></span>
+
+    <!-- Inloggnings form -->
+    <div id="loginForm" class="modal">
+      <span onclick="document.getElementById('loginForm').style.display='none'" class="close" title="Stäng">&times;</span>
+      <form name="userLogin" class="modal-content animate" onsubmit="return checkUser()">
+        <div class="container">
+          <h4 id="message" style="color: red; display:none">Fel användarnamn eller lösenord!</h4>
+          <label for="uName"><b>Användarnamn:</b></label>
+          <input type="text" name="userName" required>
+          <label for="uPsw"><b>Lösenord:</b></label>
+          <input type="password" name="userPassword" required>
+          <button type="submit">Logga in</button>
+          <button type="button" onclick="document.getElementById('loginForm').style.display='none'" class="cancelbtn">Avbyt</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Hemsida -->
+    <div id="homePage" style="text-align: center; padding-top: 100px">
+      <br><br>
+      <h1>Välkommen till hemsidan!</h1>
+      <br>
+      <h2>Här kan vara sidans innehåll</h2>
+    </div>
+        
+
+</body>
+<script src="script.js"></script>
+</html>
