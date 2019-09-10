@@ -34,7 +34,7 @@ function checkUser(){
     }
 }
 
-// Här kollas inloggningsstatus och styrs sidansinnehållet
+// Här kollas inloggningsstatusen och styrs sidansinnehållet
 function loginStatus(){    
     if (localStorage.length > 0){
         var user = localStorage.getItem("userName");
