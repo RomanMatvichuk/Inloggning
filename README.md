@@ -10,14 +10,15 @@ Beskrivning:
 
 Projektet innehåller 3 filer: index.html, script.js, style.css.
 
-index.html innehåller alla vyer. Visa är döljda från början.
+index.html innehåller alla vyer. Visa är dolda från början.
 script.js innehåller variabler och funktioner.
-style.css sidans design. Lånat på w3schools.com
+style.css är sidans design. Lånat på w3schools.com.
 
-Först när man kommer till denna sida kollas inloggningsstatus med "loginStatus()".
-Är "localStorage" innehåller "userName" då få användaren se döljd sidan.
-Annars startar inloggningsformen för att mata in användarnamn och lösenord.
-Vid felaktiga uppgifter användaren blir informerad med meddelanet.
+När sidan öppnas kontrolleras inloggningsstatusen med funktionen "loginStatus()".
+Om "localStorage" innehåller nyckeln "userName" ser användaren en dold sida.
+Annars startar inloggningsformen för att mata in ett användarnamn och ett lösenord.
+Vid felaktiga uppgifter informeras användaren med ett meddelande.
 Användarnamnet och lösenordet jämförs med konstanta variabler.
-Om allting stämmer så sparas "userName" i "localStorage" och en döljd sida tas fram.
-Vid utloggning töms "localStorage" och sidan döljs igen. Inloggningsform tillkommer.
+Om allt stämmer så sparas nyckeln "userName" i "localStorage" och en dold sida tas fram.
+Vid utloggning töms "localStorage" och sidan döljs igen. Inloggningsformen tillkommer.
+För att visa och dölja vissa delar av HTML används attributet style.display.
