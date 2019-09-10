@@ -12,9 +12,9 @@ var firstBtn = document.getElementById("firstBtn");
 var secondBtn = document.getElementById("secondBtn");
 var homePage = document.getElementById("homePage");
 
-loginStatus(); // Här kollas inloggningsstatus
+loginStatus(); // Här kollas inloggningsstatusen
 
-// När man trycker utanför inloggingsform så stängs den 
+// När man trycker utanför inloggingsformen så stängs den 
 window.onclick = function(event) {
   if (event.target == loginForm) {
     loginForm.style.display = "none";
@@ -34,7 +34,7 @@ function checkUser(){
     }
 }
 
-// Här kollas inloggningsstatus
+// Här kollas inloggningsstatus och styrs sidansinnehållet
 function loginStatus(){    
     if (localStorage.length > 0){
         var user = localStorage.getItem("userName");
@@ -53,7 +53,7 @@ function loginStatus(){
     }
 }
 
-// Här sker utloggning
+// Här sker utloggning och rensning av localStorage
 function logOut(){
     localStorage.clear();
     loginStatus();
