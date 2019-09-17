@@ -117,3 +117,36 @@ span.userinfo {
      width: 100%;
   }
 }
+
+footer {
+  font-family: sans-serif;
+  font-size: 1.5em;
+
+  position: absolute;
+  bottom: 0;
+  padding: 0 0 10px 10px;
+  
+}
+footer p {
+  margin: 0;
+  padding: 0;
+}
+
+footer a:link {
+  color: rgb(0, 60, 255);
+  text-decoration: none;
+}
+
+footer a:visited {
+  color: rgb(0, 60, 255);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+footer a:active {
+  color: red;
+  text-decoration: none;

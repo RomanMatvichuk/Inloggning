@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/b105ea0406.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Inloggning</title>
 </head>
 <body>
 
     <!-- Knappar som styr inloggning -->
-    <div style="width: 100px; float: right;">
-        <button id="firstBtn" style="display: none" onclick="document.getElementById('loginForm').style.display='block'">Logga in</button>
-        <button id="secondBtn" style="display: none" class="cancelbtn" onclick="logOut()">Logga ut</button>  
+    <div style="width: 80px; float: right; padding: 0 50px 0 0">
+        <button id="firstBtn" style="display: none" onclick="document.getElementById('loginForm').style.display='block'"><i class="fas fa-sign-in-alt fa-2x"></i></button>
+        <button id="secondBtn" style="display: none" class="cancelbtn" onclick="logOut()"><i class="fas fa-sign-out-alt fa-2x"></i></button>  
     </div>
         <span class="userinfo" id="info"></span>
 
@@ -39,7 +40,13 @@
       <br>
       <h2>Här kan vara sidans innehåll</h2>
     </div>
-        
+     
+    <footer>
+      <p><i class="fas fa-user"></i> Roman Matvichuk</p>
+      <i class="fab fa-facebook-square"></i><a href="https://www.facebook.com/roman.matviychuk"> Min Facebook sida</a><br/>
+      <i class="fab fa-github-square"></i><a href="https://github.com/RomanMatvichuk"> Min GitHub sida</a><br/>
+      <i class="fas fa-envelope-square"></i><a href="mailto:maro19xr@student.ju.se"> Min e-post</a>
+    </footer>
 
 </body>
 <script src="script.js"></script>
